@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="dashboard-navbar">
+    <div class="logo">Smart Job Portal</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="apply.html">Apply</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="form-wrapper">
+    <h2>Apply for a Job</h2>
+    <div id="msg"></div>
+   <form id="applyForm" class="form" enctype="multipart/form-data">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="job_id" placeholder="Job ID" required>
+      <h4>Apload your resume</h4>
+      <input type="file" name="resume" required />
+      <button type="submit">Submit Application</button>
+   </form>
+  </div>
+
+  <!-- JS file -->
+  <script src="Apply.js"></script>
+</body>
+</html>
